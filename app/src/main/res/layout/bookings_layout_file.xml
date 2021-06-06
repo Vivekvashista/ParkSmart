@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Id : "
+        android:textColor="@android:color/black"
+        android:textSize="8pt"
+        android:id="@+id/label_booking_id"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:id="@+id/txt_booking_id"
+        android:layout_toRightOf="@+id/label_booking_id"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Parking Address : "
+        android:textColor="@android:color/black"
+        android:textSize="8pt"
+        android:id="@+id/label_address_id"
+        android:layout_below="@+id/label_booking_id"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="8pt"
+        android:id="@+id/txt_address_id"
+        android:layout_toRightOf="@+id/label_address_id"
+        android:layout_below="@+id/txt_booking_id"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/status_id"
+        android:layout_below="@+id/txt_address_id">
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/online_circle"
+            android:text="  "
+            android:id="@+id/txt_status_id"
+            android:layout_centerVertical="true"
+            android:textSize="8pt"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and time : "
+            android:id="@+id/txt_date_time_id"
+            android:layout_centerVertical="true"
+            android:textSize="8pt"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/view_more_id"
+            android:background="@drawable/arrow_without_tale_downwords"
+            android:layout_below="@+id/status_id"
+            android:layout_centerHorizontal="true"
+            android:textSize="8pt"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
