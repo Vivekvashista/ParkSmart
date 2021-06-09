@@ -21,4 +21,4 @@
 ## Note:
 1. Payment gateway is not integrated.
 
-[Demo Link] (https://bit.ly/2FoDeQF)
+[Demo Link](https://bit.ly/2FoDeQF)
